@@ -5,17 +5,18 @@ folder with `python -m http.server 8004 --bind 127.0.0.1`.
 
 ## Editing
 
-- `index.html`: biography, profile links, news starting with NeurIPS 2024,
-  three illustrated research themes, education, research experience, selected
-  honors, and academic service.
-- `publications.html`: separate selected-publications page, linked in the navigation.
+- `index.html`: biography, profile links, all six publications, news starting
+  with NeurIPS 2024, education, research experience, selected honors, and service.
+- `publications.html`: compatibility redirect to the homepage, preserving paper anchors.
 - `publications.js`: publication metadata, links, summaries, and BibTeX.
 - `style.css`: responsive layout and colors.
 - `assets/`: locally stored profile photograph and paper images.
 
-The Home and Selected Publications pages follow the reference's separate-page
-structure. Papers are grouped by year, without a dashboard-style filter toolbar.
-BibTeX expands inline and can be copied. Links open the original paper or project.
+The homepage follows the compact single-page structure of https://tsungyilin.info/.
+All six papers are visible in a continuous illustrated list immediately after
+the biography. BibTeX expands inline and can be copied. Links open the original
+paper or project. Existing publication-page links redirect to the same paper
+on the homepage. No UI framework, external fonts, or analytics are required.
 
 ## Verified Content
 
@@ -24,16 +25,14 @@ Profile: https://scholar.google.com/citations?user=aE4vzZoAAAAJ&hl=en
 - Identity currently shown: Liang Peng, Ph.D. student, School of Computer
   Science, Wuhan University. The school name matches the paper affiliations.
 - The biography's research areas are summarized from the listed publications.
-- Home's Research section summarizes 3D query localization, visual object
-  tracking, and pathology grounding using existing paper figures and results.
-  It is a thematic overview, not a duplicate of the full publication list.
+- Each publication includes its original paper figure and a short research summary.
 - Academic Service is based on the owner's statement: reviewer for CVPR,
   NeurIPS, ICLR, Pattern Recognition (PR), and IEEE TPAMI. No service years,
   reviewing awards, editor, or area-chair roles are inferred.
 - The current photograph is the public Google Scholar profile photo (125 x 128).
-- The email `pengliang@whu.edu.cn` and advising by Xingping Dong, Heng Fan, and
-  Libo Zhang were supplied by the owner. The bio says "I am advised by" to match
-  the owner's explicit wording of studying under these three mentors.
+- The email `pengliang@whu.edu.cn` and advising by Xingping Dong and Libo Zhang
+  were supplied by the owner. Heng Fan is omitted from the biography at the
+  owner's request; published coauthorship and paper-specific author roles remain.
 - Education, the Peng Cheng Laboratory internship, and selected honors are based on the owner's supplied
   resume. Doctoral dates (2025-2029) were supplied separately; 2029 is explicitly
   marked as expected. The master's specialization and exact degree types are
@@ -60,9 +59,6 @@ Profile: https://scholar.google.com/citations?user=aE4vzZoAAAAJ&hl=en
 - Xingping Dong: https://xingpingdong.github.io/ and the Wuhan University
   faculty profile, https://jszy.whu.edu.cn/dongxingping/zh_CN/index.htm.
   Current title: Professor, School of Computer Science, Wuhan University.
-- Heng Fan: https://hengfan2010.github.io/.
-  Current title: Assistant Professor, Department of Computer Science and
-  Engineering, University of North Texas.
 - Libo Zhang: https://people.ucas.ac.cn/~zhanglibo.
   Current Chinese title is researcher at full research rank, rendered here as
   Research Professor, Institute of Software, Chinese Academy of Sciences.
@@ -88,9 +84,10 @@ comes from the owner's original poster materials.
 PGL-3D's qualitative figure source is
 https://arxiv.org/html/2609.33558v2/gst9d_qualitative_vis.png.
 
-The revised design follows https://hengfan2010.github.io/: Times serif text,
-blue links, pale-blue navigation tabs, compact biography, and image/text paper
-rows. Images use intrinsic aspect ratios with no padded fixed-height frames.
+The revised design follows https://tsungyilin.info/: a narrow white page,
+small sans-serif text, blue text links, a compact biography with a photograph,
+and a continuous image/text publication list. Images use intrinsic aspect
+ratios without borders or padded fixed-height frames.
 PGL-3D's thumbnail selects three complete RGB/point-cloud examples from the first
 time step; the original complete comparison image is retained in assets.
 VastTrack uses a landscape crop centered on the benchmark title. PCRP retains

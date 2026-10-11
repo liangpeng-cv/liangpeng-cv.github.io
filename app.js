@@ -95,6 +95,7 @@ function renderPaper(paper) {
   citation.append(summary, panel);
   links.append(citation);
   content.append(title, authors, venue, links);
+  if (paper.description) content.append(element('p', 'paper-description', paper.description));
   row.append(visual, content);
   return row;
 }
@@ -102,16 +103,16 @@ function renderPaper(paper) {
 function render() {
   const papers = window.PUBLICATIONS;
   list.replaceChildren();
-  let year;
   for (const paper of papers) {
-    if (year !== paper.year) {
-      year = paper.year;
-      list.append(element('h2', 'year-label', String(year)));
-    }
     list.append(renderPaper(paper));
   }
   status.textContent = `${papers.length} publications shown`;
 }
 
-if (list) render();
-else if (location.hash === '#publications') location.replace('publications.html');
+if (list) {
+  render();
+  // Publication anchors become available after the list has been rendered.
+  if (location.hash) requestAnimationFrame(() => {
+    document.getElementById(location.hash.slice(1))?.scrollIntoView();
+  });
+}

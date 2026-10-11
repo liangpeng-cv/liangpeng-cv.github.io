@@ -13,8 +13,9 @@
   <meta property="og:image" content="https://liangpeng-cv.github.io/assets/portrait.webp">
   <link rel="canonical" href="https://liangpeng-cv.github.io/">
   <title>Liang Peng | Wuhan University</title>
-  <link rel="stylesheet" href="style.css?v=7">
-  <script src="app.js?v=4" defer></script>
+  <link rel="stylesheet" href="style.css?v=8">
+  <script src="publications.js?v=3" defer></script>
+  <script src="app.js?v=5" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -27,38 +28,30 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <nav class="navigation page-width" aria-label="Main navigation">
-      <div class="nav-links">
-        <a href="index.html" class="active" aria-current="page">Home</a>
-        <a href="publications.html">Selected Publications</a>
-        <a href="https://scholar.google.com/citations?user=aE4vzZoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
-      </div>
-    </nav>
-  </header>
-
   <main id="main" class="page-width">
     <section class="profile" id="about" aria-labelledby="name">
+      <div class="profile-copy">
+        <h1 id="name">Liang Peng</h1>
+        <p>I am a Ph.D. student in the School of Computer Science at <a href="https://www.whu.edu.cn/" target="_blank" rel="noopener noreferrer">Wuhan University</a>. I am advised by <a href="https://xingpingdong.github.io/" target="_blank" rel="noopener noreferrer">Professor Xingping Dong</a> at Wuhan University and <a href="https://people.ucas.ac.cn/~zhanglibo" target="_blank" rel="noopener noreferrer">Research Professor Libo Zhang</a> at the Institute of Software, Chinese Academy of Sciences.</p>
+        <p>My research focuses on computer vision, particularly visual object tracking, 3D visual query localization, and multimodal perception.</p>
+        <p class="profile-email">Email: <a href="mailto:pengliang@whu.edu.cn">pengliang@whu.edu.cn</a></p>
+        <nav class="profile-links" aria-label="Profile links">
+          <a href="https://scholar.google.com/citations?user=aE4vzZoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          <a href="https://github.com/wuhengliangliang" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://wuhengliangliang.github.io/3DVQL/" target="_blank" rel="noopener noreferrer">3DVQL Project</a>
+        </nav>
+      </div>
       <figure class="portrait">
         <img src="assets/portrait.webp" width="125" height="128" alt="Liang Peng in the mountains" fetchpriority="high">
       </figure>
-      <div class="profile-copy">
-        <h1 id="name">Liang Peng</h1>
-        <p class="position">Ph.D. Student</p>
-        <p>School of Computer Science</p>
-        <p><a href="https://www.whu.edu.cn/" target="_blank" rel="noopener noreferrer">Wuhan University</a></p>
-        <p class="profile-email">Email: <a href="mailto:pengliang@whu.edu.cn">pengliang@whu.edu.cn</a></p>
-        <div class="profile-links">
-          <a href="https://scholar.google.com/citations?user=aE4vzZoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">[Google Scholar]</a>
-          <a href="https://github.com/wuhengliangliang" target="_blank" rel="noopener noreferrer">[GitHub]</a>
-          <a href="https://wuhengliangliang.github.io/3DVQL/" target="_blank" rel="noopener noreferrer">[3DVQL Project]</a>
-        </div>
-      </div>
     </section>
 
-    <section class="short-bio" aria-labelledby="bio-title">
-      <h2 id="bio-title">Short Bio:</h2>
-      <p>I am a Ph.D. student in the School of Computer Science at <a href="https://www.whu.edu.cn/" target="_blank" rel="noopener noreferrer">Wuhan University</a>. I am advised by <a href="https://xingpingdong.github.io/" target="_blank" rel="noopener noreferrer">Professor Xingping Dong</a> at Wuhan University, <a href="https://hengfan2010.github.io/" target="_blank" rel="noopener noreferrer">Assistant Professor Heng Fan</a> at the University of North Texas, and <a href="https://people.ucas.ac.cn/~zhanglibo" target="_blank" rel="noopener noreferrer">Research Professor Libo Zhang</a> at the Institute of Software, Chinese Academy of Sciences. My research focuses on computer vision, particularly visual object tracking, 3D visual query localization, and multimodal perception.</p>
+    <section class="publications section" id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title">Publications</h2>
+      <p class="author-legend"><span>* Equal contribution / co-first authors.</span> <span>&dagger; Corresponding author.</span> <span>&Dagger; Equal advising.</span></p>
+      <p class="sr-only" id="publication-status" role="status" aria-live="polite"></p>
+      <div id="publication-list"></div>
+      <noscript><p>View publications on <a href="https://scholar.google.com/citations?user=aE4vzZoAAAAJ&amp;hl=en">Google Scholar</a>.</p></noscript>
     </section>
 
     <section class="news section" id="news" aria-labelledby="news-title">
@@ -69,43 +62,6 @@
         <div class="news-item"><time datetime="2026">2026</time><p><a href="https://wuhengliangliang.github.io/3DVQL/" target="_blank" rel="noopener noreferrer">3DVQL</a> at <strong class="venue-inline blue-text">CVPR 2026</strong>: visual query localization in the 3D world.</p></div>
         <div class="news-item"><time datetime="2024">2024</time><p><a href="https://arxiv.org/abs/2403.03493" target="_blank" rel="noopener noreferrer">VastTrack: Vast Category Visual Object Tracking</a> appears in <strong class="venue-inline">NeurIPS 2024</strong>.</p></div>
       </div>
-    </section>
-
-    <section class="research section" id="research" aria-labelledby="research-title">
-      <div class="section-heading">
-        <h2 id="research-title">Research</h2>
-        <a class="research-all" href="publications.html">All publications</a>
-      </div>
-      <article class="research-row">
-        <a class="research-visual research-3d" href="publications.html#3dvql" aria-label="3DVQL publication">
-          <img src="assets/3dvql.webp" width="640" height="240" alt="Animated RGB, depth, and point-cloud views of 3D object localization" loading="lazy">
-        </a>
-        <div class="research-copy">
-          <h3>3D Visual Query Localization</h3>
-          <p>Finding queried objects across RGB and point-cloud sequences, from multimodal benchmark construction to geometry-guided localization and refinement.</p>
-          <div class="research-links"><a href="publications.html#3dvql">3DVQL (CVPR 2026)</a><a href="publications.html#pgl3d">PGL-3D</a></div>
-        </div>
-      </article>
-      <article class="research-row">
-        <a class="research-visual" href="publications.html#vasttrack" aria-label="VastTrack publication">
-          <img src="assets/vasttrack-cover.webp" width="449" height="300" alt="VastTrack benchmark with diverse annotated tracking scenes" loading="lazy">
-        </a>
-        <div class="research-copy">
-          <h3>Visual Object Tracking</h3>
-          <p>Building diverse tracking benchmarks and parameter-efficient tracking methods, with work on large-category single-object tracking and multi-object tracking.</p>
-          <div class="research-links"><a href="publications.html#vasttrack">VastTrack (NeurIPS 2024)</a><a href="publications.html#looptrack">LoopTrack</a><a href="publications.html#vastmat">VastMAT</a></div>
-        </div>
-      </article>
-      <article class="research-row">
-        <a class="research-visual" href="publications.html#pcrp" aria-label="PCRP publication">
-          <img src="assets/pcrp-cover.webp" width="1600" height="898" alt="PCRP model for grounding language descriptions in pathology images" loading="lazy">
-        </a>
-        <div class="research-copy">
-          <h3>Pathology Visual Grounding</h3>
-          <p>Connecting medical language with histopathology images through visual-word alignment and progressive coarse-to-fine refinement of tissue regions.</p>
-          <div class="research-links"><a href="publications.html#pcrp">PCRP (MICCAI 2026)</a></div>
-        </div>
-      </article>
     </section>
 
     <section class="background-section section" id="education" aria-labelledby="education-title">
