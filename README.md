@@ -5,7 +5,7 @@ folder with `python -m http.server 8004 --bind 127.0.0.1`.
 
 ## Editing
 
-- `index.html`: biography, profile links, all six publications, news starting
+- `index.html`: biography, profile links, all seven publications, news starting
   with NeurIPS 2024, education, research experience, selected honors, and service.
 - `publications.html`: compatibility redirect to the homepage, preserving paper anchors.
 - `publications.js`: publication metadata, links, summaries, and BibTeX.
@@ -13,7 +13,7 @@ folder with `python -m http.server 8004 --bind 127.0.0.1`.
 - `assets/`: locally stored profile photograph and paper images.
 
 The homepage follows the compact single-page structure of https://tsungyilin.info/.
-All six papers are visible in a continuous illustrated list immediately after
+All seven papers are visible in a continuous illustrated list immediately after
 the biography. BibTeX expands inline and can be copied. Links open the original
 paper or project. Existing publication-page links redirect to the same paper
 on the homepage. No UI framework, external fonts, or analytics are required.
@@ -48,7 +48,10 @@ Profile: https://scholar.google.com/citations?user=aE4vzZoAAAAJ&hl=en
   was not publicly accessible during preparation, so no Code link is displayed.
 - PCRP uses the owner's original model diagram from the poster materials.
 - PGL-3D uses the paper's RGB and point-cloud qualitative results as its cover.
-- The 2023 radar paper is omitted at the owner's request. Six papers are shown.
+- The 2023 radar paper is omitted at the owner's request. Seven papers are shown.
+- ResOT was added from the owner's Google Scholar profile on 2026-10-13.
+  Its 2026-10-08 arXiv submission is a preprint. The authors state that code
+  will be released; no repository or project URL is supplied in the paper.
 - Author roles were checked against the PDF title pages. The homepage uses a
   consistent legend: `*` equal contribution / co-first author, dagger corresponding
   author, double dagger equal advising. Hover labels retain primary/secondary
@@ -73,6 +76,7 @@ Profile: https://scholar.google.com/citations?user=aE4vzZoAAAAJ&hl=en
   and https://english.is.cas.cn/au/.
 - 3DVQL: https://arxiv.org/abs/2605.01498
 - PCRP: https://papers.miccai.org/miccai-2026/0762-Paper4084.html
+- ResOT: https://arxiv.org/abs/2610.11826
 - PGL-3D: https://arxiv.org/abs/2609.33558
 - LoopTrack: https://arxiv.org/abs/2609.33306
 - VastMAT: https://arxiv.org/abs/2609.34390
@@ -83,6 +87,8 @@ animation is from the owner's existing project-page assets. PCRP's model diagram
 comes from the owner's original poster materials.
 PGL-3D's qualitative figure source is
 https://arxiv.org/html/2609.33558v2/gst9d_qualitative_vis.png.
+ResOT uses the unmodified method overview (Figure 2) from
+https://arxiv.org/html/2610.11826v1/model.png.
 
 The revised design follows https://tsungyilin.info/: a narrow white page,
 small sans-serif text, blue text links, a compact biography with a photograph,
@@ -97,6 +103,10 @@ from the workspace root. No template code, tracking, or analytics copied.
 
 ## Author Role Sources
 
+- ResOT: https://arxiv.org/pdf/2610.11826, v1, page 1.
+  Eight authors in the original order; Liang Peng is fourth. No equal-contribution
+  statement was found. Xingping Dong carries a dagger, but its meaning is not
+  explained in the public PDF/HTML, so no corresponding-author role is inferred.
 - 3DVQL: local paper page 1 and https://arxiv.org/pdf/2605.01498.
   Equal: Liang Peng, Bohan Tan. First corresponding: Xingping Dong.
   Second corresponding: Zhipeng Zhang.

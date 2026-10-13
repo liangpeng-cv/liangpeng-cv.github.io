@@ -22,6 +22,17 @@ window.PUBLICATIONS = [
     bibtex: "@inproceedings{peng2026pcrp,\n  title={PCRP: Progressive Coarse-to-Fine Refinement for Pathology Grounding},\n  author={Peng, Liang and Li, Chenxiao and Dong, Shaohua and Tan, Bohan and Zhang, Zhipeng and Dong, Xingping},\n  booktitle={Medical Image Computing and Computer Assisted Intervention -- MICCAI 2026},\n  publisher={Springer Nature Switzerland},\n  year={2026}\n}"
   },
   {
+    id: "resot", year: 2026, type: "preprint", venue: "arXiv 2026", topic: "Vision-language model reliability",
+    title: "From Suppression to Repair: Mitigating Object Hallucination in Large Vision-Language Models via Localized Distribution Alignment",
+    authors: ["Chen Zhao", "Xingping Dong", "Jiachun Shi", "Liang Peng", "Chong Wang", "Zhen Lei", "Ran He", "Bo Du"],
+    equal: [],
+    corresponding: {},
+    description: "ResOT repairs hidden representations with localized optimal transport to reduce object hallucination in vision-language models without retraining.",
+    image: "assets/resot-model.png", imageSize: [1327, 457], alt: "ResOT overview: paired calibration, residual subspace construction, Gaussian optimal transport, and adaptive representation repair at inference",
+    paper: "https://arxiv.org/abs/2610.11826",
+    bibtex: "@article{zhao2026suppression,\n  title={From Suppression to Repair: Mitigating Object Hallucination in Large Vision-Language Models via Localized Distribution Alignment},\n  author={Zhao, Chen and Dong, Xingping and Shi, Jiachun and Peng, Liang and Wang, Chong and Lei, Zhen and He, Ran and Du, Bo},\n  journal={arXiv preprint arXiv:2610.11826},\n  year={2026}\n}"
+  },
+  {
     id: "pgl3d", year: 2026, type: "preprint", venue: "arXiv 2026", topic: "3D geometric learning",
     title: "PGL-3D: Towards Progressive Geometric Learning for 3D Visual Query Localization",
     authors: ["Liang Peng", "Shizhuo Mu", "Bohan Tan", "Wenyuan Wang", "Chen Zhao", "Xingping Dong", "Heng Fan", "Libo Zhang", "Bo Du"],
